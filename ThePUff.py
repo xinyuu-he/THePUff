@@ -76,6 +76,8 @@ if args.dataset == 'ml-20m':
 if args.dataset == 'taobao':
     args.node_classes = 3
     node_type_dict = {'u': 0, 'i': 1, 'c': 2}
+else:
+    assert False, "Unsupported dataset!"
 
 '''
 node_index: node_time->new_node
